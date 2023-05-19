@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_home">
+
+    <TextView
+        android:id="@+id/tv_home_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textAlignment="center"
+        android:text="Hello Mf"/>
+
+    <Button
+        android:id="@+id/btn_main_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_home_tittle"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="120dp"
+        android:text="@string/voltar"
+        android:background="@drawable/button"
+        android:textAllCaps="true"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

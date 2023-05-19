@@ -45,6 +45,7 @@
         android:drawableRight="@drawable/ic_email"
         android:maxLines="1"
         android:singleLine="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:hint="Username"/>
 
     <EditText
@@ -75,5 +76,21 @@
         android:text="@string/login"
         android:background="@drawable/button"
         android:textAllCaps="true"/>
+
+    <TextView
+        android:id="@+id/tv_main_cadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cadastre_se"
+        app:layout_constraintTop_toBottomOf="@id/btn_main_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="28dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="@color/purple"
+        android:textStyle="bold"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
