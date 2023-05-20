@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">PetBite</string>
+    <string name="bem_vindo">Bem vindo!</string>
+    <string name="login">login</string>
+    <string name="cadastre_se">Cadastre-se</string>
+    <string name="voltar">voltar</string>
 </resources>
