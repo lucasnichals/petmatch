@@ -24,17 +24,16 @@ class MainActivity : AppCompatActivity() {
                 val enteredUsername = etUsername.text.toString()
                 val enteredPassword = etPassword.text.toString()
                 if (enteredUsername == USERNAME && enteredPassword == PASSWORD) {
-                    showToast("Login bem-sucedido", Toast.LENGTH_SHORT)
+                    showToast("Login bem-sucedido", Toast.LENGTH_LONG)
                 } else {
-                    showToast("Nome de usuário ou senha incorretos", Toast.LENGTH_SHORT)
+                    showToast("Nome de usuário ou senha incorretos", Toast.LENGTH_LONG)
                 }
             }
 
         tvCadastro.setOnClickListener {
             val intent = Intent(this, activity_home::class.java)
             startActivity(intent)
-            }
-        }
+            } }
         private fun showToast(message: String, duration: Int) {
             val toast = Toast.makeText(this, message, duration)
             toast.setGravity(
