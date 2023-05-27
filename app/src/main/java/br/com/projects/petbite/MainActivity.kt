@@ -41,16 +41,27 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        fun showToast(message: String, duration: Int) {
+            runOnUiThread {
+                Toast.makeText(this, message, duration).show()
+            }
+        }
         val network = Network.getInstance("https://64690bde03bb12ac2084f15c.mockapi.io/")
         val petAPI = network.create(MockAPI::class.java)
         val listPets = petAPI.listPets()
         listPets.enqueue(object : Callback<List<PetDTO>> {
             override fun onResponse(call: Call<List<PetDTO>>, response: Response<List<PetDTO>>) {
-            response.body()?.forEach { Log.i("teste",it.name)}
+                if (response.isSuccessful) {
+                    val pets = response.body()
+                    val petNames = pets?.joinToString(separator = "\n") { it.name }
+                    showToast("Lista de Pets:\n$petNames", Toast.LENGTH_LONG)
+                } else {
+                    showToast("Falha ao obter a lista de pets. Código de resposta: ${response.code()}", Toast.LENGTH_LONG)
+                }
             }
 
             override fun onFailure(call: Call<List<PetDTO>>, t: Throwable) {
-
+                showToast("Erro: ${t.message}", Toast.LENGTH_LONG)
             }
 
         })
