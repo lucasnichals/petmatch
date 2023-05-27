@@ -2,7 +2,7 @@ package br.com.projects.petbite
 
 import java.util.Date
 
-class PetDTO(val creationDate: Date, val name: String, val birthday: Date, val id: String)
+class PetDTO(val creationDate: String, val name: String, val birthday: String, val id: String)
 
 
 
