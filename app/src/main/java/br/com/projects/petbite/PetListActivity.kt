@@ -19,14 +19,10 @@ class PetListActivity : AppCompatActivity() {
 
         listPets.enqueue(object : Callback<List<PetDTO>> {
             override fun onResponse(
-                call: Call<List<PetDTO>>,
-                response: Response<List<PetDTO>>
+                call: Call<List<PetDTO>>, response: Response<List<PetDTO>>
             ) {
                 if (response.isSuccessful) {
-
                     response.body()?.let { rvPetList.adapter = CustomAdapter(it) }
-
-
                 }
             }
 
@@ -34,6 +30,5 @@ class PetListActivity : AppCompatActivity() {
 
             }
         })
-        rvPetList.listener
     }
 }
