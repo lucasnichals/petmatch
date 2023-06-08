@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 class CustomAdapter(private val dataSet: List<PetDTO>) :
@@ -15,16 +14,15 @@ class CustomAdapter(private val dataSet: List<PetDTO>) :
         val tvPetBirthday: TextView
 
         init {
-            tvPetName = view.findViewById(R.id.tv_pet_name)
-            tvPetCreationDate = view.findViewById(R.id.tv_pet_creation_date)
-            tvPetBirthday = view.findViewById(R.id.tv_pet_birthday)
+            tvPetName = view.findViewById(R.id.tv_cv_pet_name)
+            tvPetCreationDate = view.findViewById(R.id.tv_cv_creation_date)
+            tvPetBirthday = view.findViewById(R.id.tv_cv_birthday)
         }
     }
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.text_row_item, parent, false)
+            .inflate(R.layout.card_cell, parent, false)
 
         return ViewHolder(view)
     }
