@@ -48,6 +48,7 @@
         android:singleLine="true"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:hint="@string/username"
+        android:textSize="18sp"
         android:autofillHints="" />
 
     <EditText
@@ -65,6 +66,7 @@
         android:inputType="textPassword"
         android:maxLines="1"
         android:singleLine="true"
+        android:textSize="18sp"
         android:hint="@string/password"
         android:autofillHints="" />
 
