@@ -10,30 +10,20 @@ class CustomAdapter(private val dataSet: List<PetDTO>) :
     RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val tvPetName: TextView
-        val tvPetCreationDate: TextView
-        val tvPetBirthday: TextView
 
         init {
             tvPetName = view.findViewById(R.id.tv_cv_pet_name)
-            tvPetCreationDate = view.findViewById(R.id.tv_cv_creation_date)
-            tvPetBirthday = view.findViewById(R.id.tv_cv_birthday)
         }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.card_cell, parent, false)
-
         return ViewHolder(view)
     }
 
     override fun getItemCount() = dataSet.size
-
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-
-        holder.tvPetName.text = dataSet[position].name
-        holder.tvPetCreationDate.text = dataSet[position].creationDate
-        holder.tvPetBirthday.text = dataSet[position].birthday
-
+        holder.tvPetName.text = dataSet[position].id
     }
 }
