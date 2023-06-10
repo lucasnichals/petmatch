@@ -4,4 +4,14 @@
     <string name="login">login</string>
     <string name="cadastre_se">Cadastre-se</string>
     <string name="voltar">voltar</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="logo_description">logo\t\t\t\t\t\t\t</string>
+    <string name="cardimage">cardImage</string>
+    <string name="pet_name_holder">Pet name holder</string>
+    <string name="pet_creation_date">pet creation date</string>
+    <string name="pet_birthday">pet birthday</string>
+    <string name="iv_cardimage" />
+    <string name="pet_description">pet_description</string>
+
 </resources>
