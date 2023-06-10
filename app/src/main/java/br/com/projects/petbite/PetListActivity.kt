@@ -14,7 +14,7 @@ import retrofit2.Response
 
 class PetListActivity : AppCompatActivity() {
 
-        override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pet_list)
         var petList: List<PetDTO>? = null
@@ -35,6 +35,7 @@ class PetListActivity : AppCompatActivity() {
                     }
                 }
             }
+
             override fun onFailure(call: Call<List<PetDTO>>, t: Throwable) {
 
             }
@@ -52,14 +53,11 @@ class PetListActivity : AppCompatActivity() {
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
                 val position = viewHolder.adapterPosition
                 val pet = petList?.get(position)
-                val petName = pet?.name
-                val petCreationDate = pet?.creationDate
-                val petBirthday = pet?.birthday
-                val intent = Intent(this@PetListActivity, DetailActivity::class.java)
-                intent.putExtra("petName", petName)
-                intent.putExtra("petCreationDate", petCreationDate)
-                intent.putExtra("petBirthday", petBirthday)
-                startActivity(intent)
+                pet?.let {
+                    val intent = Intent(this@PetListActivity, DetailActivity::class.java)
+                    intent.putExtra("pet", pet)
+                    startActivity(intent)
+                }
             }
         }).attachToRecyclerView(rvPetList)
     }

@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 class CustomAdapter(private val dataSet: List<PetDTO>) :
     RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val tvPetName: TextView
+        public val tvPetName: TextView
 
         init {
             tvPetName = view.findViewById(R.id.tv_cv_pet_name)
@@ -25,5 +25,9 @@ class CustomAdapter(private val dataSet: List<PetDTO>) :
     override fun getItemCount() = dataSet.size
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.tvPetName.text = dataSet[position].id
+    }
+
+    fun getPet(int: Int): PetDTO {
+        return dataSet[int]
     }
 }
