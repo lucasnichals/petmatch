@@ -1,9 +1,9 @@
-package br.com.projects.petbite
+package br.com.projects.petbite.ui
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import br.com.projects.petbite.R
 
 class activity_home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

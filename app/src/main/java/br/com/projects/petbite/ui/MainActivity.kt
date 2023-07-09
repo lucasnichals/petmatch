@@ -1,17 +1,14 @@
-package br.com.projects.petbite
+package br.com.projects.petbite.ui
 
 import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
+import br.com.projects.petbite.R
 
 class MainActivity : AppCompatActivity() {
     val USERNAME = "u"

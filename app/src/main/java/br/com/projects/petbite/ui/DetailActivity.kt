@@ -1,10 +1,12 @@
-package br.com.projects.petbite
+package br.com.projects.petbite.ui
 
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import androidx.annotation.RequiresApi
+import br.com.projects.petbite.data.PetDTO
+import br.com.projects.petbite.R
 
 class DetailActivity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.TIRAMISU)

@@ -1,4 +1,4 @@
-package br.com.projects.petbite
+package br.com.projects.petbite.data.repository
 
 import com.google.gson.Gson
 import retrofit2.Retrofit

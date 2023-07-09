@@ -1,16 +1,18 @@
-package br.com.projects.petbite
+package br.com.projects.petbite.ui
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.os.Parcelable
-import android.widget.TextView
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
+import br.com.projects.petbite.ui.adapter.CustomAdapter
+import br.com.projects.petbite.data.PetDTO
+import br.com.projects.petbite.R
+import br.com.projects.petbite.domain.PetListState
+import br.com.projects.petbite.domain.PetListViewModel
+
 
 class PetListActivity : AppCompatActivity() {
 
@@ -19,25 +21,19 @@ class PetListActivity : AppCompatActivity() {
         setContentView(R.layout.activity_pet_list)
         var petList: List<PetDTO>? = null
         val rvPetList: RecyclerView = findViewById(R.id.rv_pet_list)
-        val network = Network.getInstance("https://64690bde03bb12ac2084f15c.mockapi.io/")
-        val petAPI = network.create(MockAPI::class.java)
-        val listPets = petAPI.listPets()
 
-        listPets.enqueue(object : Callback<List<PetDTO>> {
-            override fun onResponse(
-                call: Call<List<PetDTO>>, response: Response<List<PetDTO>>
-            ) {
-                if (response.isSuccessful) {
-                    val pets = response.body()
-                    pets?.let {
-                        petList = it
-                        rvPetList.adapter = CustomAdapter(it)
-                    }
-                }
-            }
 
-            override fun onFailure(call: Call<List<PetDTO>>, t: Throwable) {
+        val viewModel: PetListViewModel by viewModels()
 
+        viewModel.pets.observe(this, Observer { pets ->
+            petList = pets
+            rvPetList.adapter = CustomAdapter(pets)
+        })
+        viewModel.state.observe(this, Observer { state ->
+            when (state) {
+                PetListState.LOADING -> showLoading()
+                PetListState.FAILURE -> showError()
+                PetListState.SUCCESS -> hideLoading()
             }
         })
 
@@ -60,6 +56,18 @@ class PetListActivity : AppCompatActivity() {
                 }
             }
         }).attachToRecyclerView(rvPetList)
+    }
+
+    private fun hideLoading() {
+        TODO("Not yet implemented")
+    }
+
+    private fun showError() {
+        TODO("Not yet implemented")
+    }
+
+    private fun showLoading() {
+        TODO("Not yet implemented")
     }
 }
 

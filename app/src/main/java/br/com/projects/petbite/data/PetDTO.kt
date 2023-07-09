@@ -1,4 +1,4 @@
-package br.com.projects.petbite
+package br.com.projects.petbite.data
 
 import android.os.Parcel
 import android.os.Parcelable
