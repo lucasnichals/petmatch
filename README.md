@@ -37,6 +37,30 @@ aplicativo que seja responsável por entregar ao cliente uma visualização ráp
 todos os animais que estiverem disponíveis para a adoção, sem considerar fatores
 estéticos como “raça”, por exemplo
 
+# Criação da Persona: Ana Flávia e o Aplicativo PetMatch
+
+Contexto Inicial
+
+Pesquisa de Público-Alvo: Após analisar 18 entrevistas com potenciais usuários de um aplicativo de adoção de animais, a equipe do PetMatch identifica um perfil comum de pessoa que deseja adotar um pet: jovens profissionais urbanos, em busca de companhia animal.
+Desenvolvimento da Persona
+
+Ana Flávia: A partir destes dados, a equipe cria Ana Flávia, uma persona que simboliza o público-alvo ideal do PetMatch. Ela tem 28 anos, é professora de história em uma escola municipal, formada pela PUC, e recentemente comprou seu próprio apartamento.
+Necessidades e Desafios
+
+Busca por um Pet: Ana, embora em um relacionamento, deseja a companhia de um animal de estimação. Seu desafio é encontrar um pet de porte pequeno, que se adapte bem ao espaço limitado de seu apartamento, e que preferencialmente seja fêmea.
+Dificuldades de Adoção: Ela enfrenta problemas para agendar visitas de adoção. Frequentemente, ao se interessar por um animal, descobre que ele já foi adotado, causando frustrações repetidas.
+Descoberta do PetMatch
+
+Encontro com PetMatch: Cansada das tentativas frustradas, Ana descobre o PetMatch, um aplicativo que promete facilitar o processo de adoção.
+Interface e Facilidade: A interface amigável do aplicativo e a facilidade em agendar visitas chamam a atenção de Ana.
+Conexão com Pandora
+
+Pandora, a Vira-Lata: No PetMatch, Ana se depara com Pandora, uma vira-lata mistura de basset com poodle. Pequena e carismática, Pandora parece a escolha ideal para o novo lar de Ana.
+Agendamento de Visita: Através do PetMatch, Ana consegue facilmente agendar um encontro com Pandora, algo que antes era um grande desafio.
+Resultado Feliz
+
+Adoção bem-sucedida: A visita é um sucesso, e Ana finalmente encontra a companheira perfeita para sua nova fase de vida no apartamento.
+
 # Etapa de Desenvolvimento no QUANT-UX
 Novembro/23
 
@@ -60,4 +84,7 @@ Fase 5
 Iteração e Melhoria Contínua
 
 Iterações: A equipe continua a iterar o design e as funcionalidades do aplicativo, utilizando os dados coletados via Google Forms para refinar a experiência do usuário.
+
+
+
 
