@@ -37,7 +37,7 @@ aplicativo que seja responsável por entregar ao cliente uma visualização ráp
 todos os animais que estiverem disponíveis para a adoção, sem considerar fatores
 estéticos como “raça”, por exemplo
 
-# Etapa d Desenvolvimento no QUANT-UX
+# Etapa de Desenvolvimento no QUANT-UX
 Novembro/23
 
 Fase 1
