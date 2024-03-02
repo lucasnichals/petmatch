@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import br.com.projects.petbite.view.HomeActivity
 
 class MainActivity : AppCompatActivity() {
     val USERNAME = "u"
@@ -31,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             }
 
         tvCadastro.setOnClickListener {
-            val intent = Intent(this, activity_home::class.java)
+            val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
             } }
         private fun showToast(message: String, duration: Int) {
