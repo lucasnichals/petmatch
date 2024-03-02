@@ -9,7 +9,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import br.com.projects.petbite.view.ClientActivity
-
+import br.com.projects.petbite.view.HomeActivity
 
 
 class MainActivity : AppCompatActivity() {

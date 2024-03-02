@@ -21,7 +21,10 @@
             android:name=".PetListActivity"
             android:exported="false" />
         <activity
-            android:name=".activity_home"
+            android:name=".view.ClientActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.HomeActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
