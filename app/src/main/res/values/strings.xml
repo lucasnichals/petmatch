@@ -13,5 +13,9 @@
     <string name="pet_birthday">pet birthday</string>
     <string name="iv_cardimage" />
     <string name="pet_description">pet_description</string>
+    <string name="client_name">"Nome: "</string>
+    <string name="client_email">"E-mail: "</string>
+    <string name="tv_password">"Senha: "</string>
+    <string name="btn_register">CADASTRAR</string>
 
 </resources>
