@@ -18,5 +18,6 @@
     <string name="tv_password">"Senha: "</string>
     <string name="btn_register">CADASTRAR</string>
     <string name="tv_register">Cadastre-se</string>
+    <string name="default_notification_channel_id">INHAME</string>
 
 </resources>
