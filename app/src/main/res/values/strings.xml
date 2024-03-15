@@ -19,5 +19,11 @@
     <string name="btn_register">CADASTRAR</string>
     <string name="tv_register">Cadastre-se</string>
     <string name="default_notification_channel_id">INHAME</string>
+    <string name="escolha_a_foto">Escolha a foto</string>
+    <string name="select_image" />
+    <string name="pet_name_hint" />
+    <string name="pet_birthday_hint">\n</string>
+    <string name="pet_description_hint" />
+    <string name="Cadastrar" />
 
 </resources>
