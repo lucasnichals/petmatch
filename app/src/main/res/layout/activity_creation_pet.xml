@@ -13,19 +13,15 @@
         android:padding="16dp"
         tools:context=".CadastroAnimalActivity">
 
-
         <ImageView
             android:id="@+id/iv_pet_list_screen"
-            android:layout_width="280dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/pet_novo"
-            android:adjustViewBounds="true"
-            android:contentDescription="@string/iv_cardimage"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/default3"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:background="@color/purple"
             android:layout_gravity="center"/>
 
         <Button
@@ -40,7 +36,6 @@
             android:id="@+id/et_pet_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/pet_name_hint"
             android:inputType="textPersonName"
             android:layout_marginBottom="8dp"/>
 
@@ -48,7 +43,6 @@
             android:id="@+id/et_pet_birthday"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/pet_birthday_hint"
             android:inputType="date"
             android:layout_marginBottom="8dp"/>
 
