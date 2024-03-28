@@ -1,5 +1,5 @@
 # PetMatch
-Projeto interdisciplinar I - GTI 4 - PetMatch - IFPR/Pinhais
+Projeto interdisciplinar I - GTI 5 - PetMatch - IFPR/Pinhais
 
 # Equipe
 
