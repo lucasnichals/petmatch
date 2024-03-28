@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PetBite</string>
+    <string name="app_name">PetMatch</string>
     <string name="bem_vindo">Bem vindo!</string>
     <string name="login">login</string>
     <string name="cadastre_se">Cadastre-se</string>
@@ -13,5 +13,17 @@
     <string name="pet_birthday">pet birthday</string>
     <string name="iv_cardimage" />
     <string name="pet_description">pet_description</string>
+    <string name="client_name">"Nome: "</string>
+    <string name="client_email">"E-mail: "</string>
+    <string name="tv_password">"Senha: "</string>
+    <string name="btn_register">CADASTRAR</string>
+    <string name="tv_register">Cadastre-se</string>
+    <string name="default_notification_channel_id">INHAME</string>
+    <string name="escolha_a_foto">Escolha a foto</string>
+    <string name="select_image" />
+    <string name="pet_name_hint" />
+    <string name="pet_birthday_hint">\n</string>
+    <string name="pet_description_hint" />
+    <string name="Cadastrar" />
 
 </resources>

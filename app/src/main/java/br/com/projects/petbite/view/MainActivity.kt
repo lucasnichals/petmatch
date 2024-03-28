@@ -4,20 +4,19 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
+import br.com.projects.petbite.view.ClientActivity
+import br.com.projects.petbite.view.HomeActivity
+
 
 class MainActivity : AppCompatActivity() {
     val USERNAME = "u"
     val PASSWORD = "p"
 
-    @SuppressLint("SuspiciousIndentation")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -26,19 +25,19 @@ class MainActivity : AppCompatActivity() {
         val btnLogin: Button = findViewById(R.id.btn_main_login)
         val tvCadastro: TextView = findViewById(R.id.tv_main_cadastro)
 
-//        btnLogin.setOnClickListener {
-//            val enteredUsername = etUsername.text.toString()
-//            val enteredPassword = etPassword.text.toString()
-//            if (enteredUsername == USERNAME && enteredPassword == PASSWORD) {
-//                showToast("Login bem-sucedido", Toast.LENGTH_LONG)
-//            } else {
-//                showToast("Nome de usuário ou senha incorretos", Toast.LENGTH_LONG)
-//            }
-//        }
+        btnLogin.setOnClickListener {
+            val enteredUsername = etUsername.text.toString()
+            val enteredPassword = etPassword.text.toString()
+            if (enteredUsername == USERNAME && enteredPassword == PASSWORD) {
+                showToast("Login bem-sucedido", Toast.LENGTH_LONG)
+            } else {
+                showToast("Nome de usuário ou senha incorretos", Toast.LENGTH_LONG)
+            }
+        }
 
 
         tvCadastro.setOnClickListener {
-            val intent = Intent(this, activity_home::class.java)
+            val intent = Intent(this, ClientActivity::class.java)
             startActivity(intent)
         }
 
@@ -59,9 +58,7 @@ class MainActivity : AppCompatActivity() {
     private fun showToast(message: String, duration: Int) {
         val toast = Toast.makeText(this, message, duration)
         toast.setGravity(
-            android.view.Gravity.TOP or android.view.Gravity.CENTER_HORIZONTAL,
-            10,
-            10
+            android.view.Gravity.TOP or android.view.Gravity.CENTER_HORIZONTAL, 10, 10
         )
         toast.show()
     }

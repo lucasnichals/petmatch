@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "650703095500",
+    "project_id": "petmatch-49b68",
+    "storage_bucket": "petmatch-49b68.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650703095500:android:c1a91967b71e906da8e469",
+        "android_client_info": {
+          "package_name": "br.com.projects.petbite"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCUKvXEJ_Odi3iMFaEzNIdShWr-Jo4Bus"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
