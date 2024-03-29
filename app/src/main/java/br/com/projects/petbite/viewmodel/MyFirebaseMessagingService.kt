@@ -30,7 +30,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         val remoteView = RemoteViews("br.com.projects.petbite", R.layout.pushnotification).apply {
             setTextViewText(R.id.tv_app_tittle, title)
             setTextViewText(R.id.tv_app_description, message)
-            setImageViewResource(R.id.iv_app_logo, R.drawable.ic_logo)
+            setImageViewResource(R.id.iv_app_logo, R.drawable.nova_logo2)
         }
         return remoteView
     }
@@ -45,9 +45,8 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         )
 
         val builder = NotificationCompat.Builder(applicationContext, channelId).apply {
-            setSmallIcon(R.drawable.ic_logo)
+            setSmallIcon(R.drawable.nova_logo2)
             setAutoCancel(true)
-            setVibrate(longArrayOf(1000, 1000, 1000, 1000))
             setOnlyAlertOnce(true)
             setContentIntent(pendingIntent)
             setContent(getRemoteView(title, message))
