@@ -1,6 +1,5 @@
 package br.com.projects.petbite
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,8 +8,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import br.com.projects.petbite.view.ClientActivity
-import br.com.projects.petbite.view.HomeActivity
-
+import br.com.projects.petbite.view.PetListActivity
 
 class MainActivity : AppCompatActivity() {
     val USERNAME = "u"

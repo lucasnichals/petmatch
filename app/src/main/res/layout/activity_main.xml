@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.MainActivity">
+    android:background="@color/pback"
+    tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:src="@drawable/logo1"
+        android:src="@drawable/main_logo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints"
@@ -28,7 +29,7 @@
         android:layout_marginTop="0dp"
         android:layout_marginBottom="300dp"
         android:textColor="@color/purple"
-        android:textStyle="bold"
+        android:textStyle="italic"
         android:textSize="36sp"/>
 
     <EditText
@@ -78,8 +79,11 @@
         android:layout_marginTop="36dp"
         android:layout_marginStart="120dp"
         android:layout_marginEnd="120dp"
+        android:textSize="18sp"
         android:text="@string/login"
-        android:background="@drawable/button"
+        android:backgroundTint="@color/orange"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         android:textAllCaps="true"/>
 
     <TextView
@@ -94,8 +98,8 @@
         android:layout_marginEnd="36dp"
         android:layout_marginTop="28dp"
         android:textAlignment="center"
-        android:textSize="16sp"
-        android:textColor="@color/purple"
+        android:textSize="18sp"
+        android:textColor="@color/black"
         android:textStyle="bold"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

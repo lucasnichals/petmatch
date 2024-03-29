@@ -1,10 +1,12 @@
-package br.com.projects.petbite
+package br.com.projects.petbite.view.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import br.com.projects.petbite.PetDTO
+import br.com.projects.petbite.R
 
 class CustomAdapter(private val dataSet: List<PetDTO>) :
     RecyclerView.Adapter<CustomAdapter.ViewHolder>() {

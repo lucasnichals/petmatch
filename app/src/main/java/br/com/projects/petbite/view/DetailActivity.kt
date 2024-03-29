@@ -1,8 +1,9 @@
-package br.com.projects.petbite
+package br.com.projects.petbite.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import br.com.projects.petbite.R
 
 class DetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

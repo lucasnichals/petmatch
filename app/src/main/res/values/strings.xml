@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">PetMatch</string>
-    <string name="bem_vindo">Bem vindo!</string>
-    <string name="login">login</string>
+    <string name="bem_vindo">PetMatch</string>
+    <string name="login">ACESSAR</string>
     <string name="cadastre_se">Cadastre-se</string>
     <string name="voltar">voltar</string>
-    <string name="password">Password</string>
-    <string name="username">Username</string>
+    <string name="password">Senha</string>
+    <string name="username">Usuário</string>
     <string name="logo_description">logo\t\t\t\t\t\t\t</string>
     <string name="cardimage">cardImage</string>
     <string name="pet_name_holder">Pet name holder</string>
@@ -25,5 +25,10 @@
     <string name="pet_birthday_hint">\n</string>
     <string name="pet_description_hint" />
     <string name="Cadastrar" />
+    <string name="Agendamento">Agendamento</string>
+    <string name="date">Data</string>
+    <string name="hour">Hora</string>
+    <string name="submit">SOLICITAR</string>
+    <string name="schedule">Escolha o dia da sua visita! :)</string>
 
 </resources>

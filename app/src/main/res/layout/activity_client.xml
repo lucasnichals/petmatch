@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/pback"
     tools:context=".view.ClientActivity">
 
     <TextView
@@ -14,6 +15,7 @@
         android:text="@string/tv_register"
         android:textAlignment="center"
         android:textSize="36dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/et_name"
         app:layout_constraintBottom_toTopOf="@+id/et_name"
         app:layout_constraintTop_toTopOf="parent" />
@@ -33,9 +35,11 @@
     <EditText
         android:id="@+id/et_name"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="90dp"
         android:layout_marginEnd="36dp"
+        android:maxLines="1"
+        android:hint="Digite seu nome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tv_client_name"
         app:layout_constraintTop_toTopOf="parent" />
@@ -49,16 +53,18 @@
         android:text="@string/client_email"
         app:layout_constraintBottom_toBottomOf="@+id/et_email"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/et_email"/>
+        app:layout_constraintTop_toTopOf="@+id/et_email" />
 
     <EditText
 
         android:id="@+id/et_email"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="36dp"
+        android:maxLines="1"
         app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Digite seu e-mail"
         app:layout_constraintStart_toEndOf="@+id/tv_client_email"
         app:layout_constraintTop_toBottomOf="@+id/et_name" />
 
@@ -77,24 +83,58 @@
     <EditText
         android:id="@+id/et_password"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="36dp"
         android:inputType="textPassword"
+        android:hint="Defina sua senha"
+        android:maxLines="1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tv_client_password"
-        app:layout_constraintTop_toBottomOf="@id/et_email"/>
+        app:layout_constraintTop_toBottomOf="@id/et_email" />
+
+    <CheckBox
+        android:id="@+id/cbox_adotar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Quero adotar"
+        app:layout_constraintEnd_toEndOf="@+id/et_password"
+        app:layout_constraintStart_toStartOf="@+id/tv_client_password"
+        android:contentDescription="cbox1"
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+    <CheckBox
+        android:id="@+id/cbox_doar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="18dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Sou doador"
+        app:layout_constraintBottom_toTopOf="@id/btn_register"
+        app:layout_constraintEnd_toEndOf="@+id/cbox_adotar"
+        app:layout_constraintStart_toStartOf="@+id/cbox_adotar"
+        android:contentDescription="cbox2"
+        app:layout_constraintTop_toBottomOf="@+id/cbox_adotar" />
+
 
     <Button
         android:id="@+id/btn_register"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="36dp"
+        android:backgroundTint="@color/orange"
         android:text="@string/btn_register"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_password" />
+        app:layout_constraintTop_toBottomOf="@id/cbox_doar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

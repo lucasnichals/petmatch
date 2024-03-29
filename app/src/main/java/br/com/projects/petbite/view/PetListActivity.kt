@@ -1,13 +1,15 @@
-package br.com.projects.petbite
+package br.com.projects.petbite.view
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.os.Parcelable
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
+import br.com.projects.petbite.view.adapter.CustomAdapter
+import br.com.projects.petbite.MockAPI
+import br.com.projects.petbite.Network
+import br.com.projects.petbite.PetDTO
+import br.com.projects.petbite.R
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
